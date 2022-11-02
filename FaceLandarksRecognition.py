@@ -8,8 +8,8 @@ import mediapipe as mp
 # Initializing the Model
 mp_holistic = mp.solutions.holistic
 holistic_model = mp_holistic.Holistic(
-    min_detection_confidence=0.5,
-    min_tracking_confidence=0.5
+    min_detection_confidence=0.25,
+    min_tracking_confidence=0.25
 
 )
 
@@ -28,7 +28,7 @@ while capture.isOpened():
     ret, frame = capture.read()
 
     # resizing the frame for better view
-    frame = cv2.resize(frame, (800, 600))
+    frame = cv2.resize(frame, (1280, 720))
 
     # Converting the from BGR to RGB
     image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
