@@ -2,6 +2,8 @@ import cv2
 import time
 import mediapipe as mp
 
+# Leo was here
+
 # Grabbing the Holistic Model from Mediapipe and
 # Initializing the Model
 mp_holistic = mp.solutions.holistic
